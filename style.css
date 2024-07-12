@@ -1,0 +1,49 @@
+div {
+  width: 96%;
+  margin: 0 auto;
+}
+
+@media (max-width: 360px) {
+  div {
+    width: 94%;
+  }
+}
+
+@media (max-width: 768px) {
+  div {
+    width: 96%;
+  }
+}
+
+@media (max-width: 1024px) {
+  div {
+    width: 720px;
+  }
+}
+
+@media (min-width: 1025px) {
+  div {
+    width: 996px;
+  }
+}
+
+button {
+  font-weight: bold;
+  width: 100%;
+  background-color: rgb(36, 173, 152);
+  color: rgb(255, 255, 255);
+  padding: 20px 40px;
+  border: none;
+  cursor: pointer;
+}
+
+@media (min-width: 720px) {
+  button {
+    width: auto;
+  }
+}
+
+button:hover {
+  background-color: rgb(255, 255, 255);
+  color: rgb(36, 173, 152);
+}
