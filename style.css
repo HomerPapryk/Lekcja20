@@ -1,33 +1,13 @@
-div {
-  width: 96%;
+/* Styl resetujący domyślne ustawienia przeglądarki */
+@import url("reset.css");
+
+/* Podstawowe style */
+.container {
+  width: 94%;
   margin: 0 auto;
 }
 
-@media (max-width: 360px) {
-  div {
-    width: 94%;
-  }
-}
-
-@media (max-width: 768px) {
-  div {
-    width: 96%;
-  }
-}
-
-@media (max-width: 1024px) {
-  div {
-    width: 720px;
-  }
-}
-
-@media (min-width: 1025px) {
-  div {
-    width: 996px;
-  }
-}
-
-button {
+.btn {
   font-weight: bold;
   width: 100%;
   background-color: rgb(36, 173, 152);
@@ -37,13 +17,32 @@ button {
   cursor: pointer;
 }
 
-@media (min-width: 720px) {
-  button {
+/* Media queries dla różnych szerokości ekranu */
+@media (min-width: 361px) {
+  .container {
+    width: 96%;
+  }
+}
+
+@media (min-width: 769px) {
+  .container {
+    width: 720px;
+  }
+  .btn {
     width: auto;
   }
 }
 
-button:hover {
-  background-color: rgb(255, 255, 255);
-  color: rgb(36, 173, 152);
+@media (min-width: 1025px) {
+  .container {
+    width: 996px;
+  }
+}
+
+/* Hover efekt dla urządzeń obsługujących kursor */
+@media (hover: hover) {
+  .btn:hover {
+    background-color: rgb(255, 255, 255);
+    color: rgb(36, 173, 152);
+  }
 }
